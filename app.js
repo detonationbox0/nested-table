@@ -43,7 +43,7 @@ function MainCtrl($http) {
     { name: 'address.city'}
   ];
  
-  $http.get('/data/500_complex.json')
+  $http.get('/nested-table/data/500_complex.json')
     .then(function(response) {
       var data = response.data;
  
@@ -89,7 +89,7 @@ app.controller('SecondCtrl', function SecondCtrl($http, $log) {
       { name: 'address.city'}
   ];
 
-  $http.get('/data/500_complex.json')
+  $http.get('/nested-table/data/500_complex.json')
       .then(function(response) {
           var data = response.data;
 
